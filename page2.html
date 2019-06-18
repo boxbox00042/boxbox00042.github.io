@@ -11,7 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/start1.css" rel="stylesheet">
     <link href="css/album.css" rel="stylesheet">
-
+    <meta name="author" content="oxxo.studio">
+    <meta name="copyright" content="oxxo.studio">
 
     <title>EVA料理</title>
 </head>
@@ -43,7 +44,7 @@
         width: 47px;
         height: 25px;
     }
-    
+
 </style>
 
 <body>
@@ -122,16 +123,16 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <img src="img/d743195.jpg" class="img1" text="Thumbnail">
+                        <img src="img/cake_02.png" class="img1" text="Thumbnail">
 
                         <div class="card-body">
-                            <p class="card-text">&nbsp;小籠包</p>
+                            <p class="card-text">&nbsp;芋香饅頭</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
 
 
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal01">觀看教學影片</button>
-                            <div class="modal" id="myModal01">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal01" onclick="displayDate()">觀看教學影片</button>
+                                    <div class="modal" id="myModal01">
                                         <div class="modal-dialog modal-dialog-scrollable">
                                             <div class="modal-content">
 
@@ -143,9 +144,11 @@
 
                                                 <!-- Modal body -->
                                                 <div class="modal-body">
-                             <iframe width="410" height="350" src="https://www.youtube.com/embed/afb4zJZAeKY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <h4>辨識的文字會顯示在下方：</h4>
+                                                    <h1 id="show"></h1>
+                                                    <video id="MovieShow2" controls src="456789.mp4" width="400" height="400"></video>
 
-                                                   
+
                                                 </div>
 
                                                 <!-- Modal footer -->
@@ -196,47 +199,80 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="img/article-598abbcb477ca.jpg" class="img2">
-                        <div class="card-body">
-                            <p class="card-text">美味蟹堡</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">觀看教學影片</button>
 
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">所需食材</button>
-                                </div>
-                                <small class="text-muted"></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <img src="img/large_d8339dce6b3c007e.webp" class="img3">
-                        <div class="card-body">
-                            <p class="card-text">生菜沙拉</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">觀看教學影片</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">所需食材</button>
-                                </div>
-                                <small class="text-muted"></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                        <img src="img/large_6da1dfd15160b90c.webp" class="img4">
+                        <img src="img/cake_01.png" class="img3">
                         <div class="card-body">
-                            <p class="card-text">焗烤馬鈴薯</p>
+                            <p class="card-text">舒芙蕾鬆餅</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">觀看教學影片</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">所需食材</button>
+
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal03"onclick="display()">觀看教學影片</button>
+                                    <div class="modal" id="myModal03">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title">觀看教學影片</h1>
+                                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <h4>辨識的文字會顯示在下方：</h4>
+                                                    <h1 id="show3"></h1>
+                                                    <video id="MovieShow3" controls src="pap.mp4" width="400" height="400"></video>
+
+
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- The Modal -->
+
+
+
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal04">所需食材</button>
+                                    <!-- The Modal -->
+                                    <div class="modal" id="myModal04">
+                                        <div class="modal-dialog modal-dialog-scrollable">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title">所需食材</h1>
+                                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <p>1.低筋麵粉</p>
+                                                    <p>2.砂糖 Sugar—5g</p>
+                                                    <p>3.蛋黃 Yolk—1個</p>
+                                                    <p>4.沙拉油 Vegetable oil—1/2大匙</p>
+                                                    <p>5.牛奶 Milk—1/2大匙</p>
+                                                </div>
+
+                                                <!-- Modal footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <small class="text-muted"></small>
                             </div>
@@ -327,6 +363,104 @@
     </div>
     <main>
     </main>
+
+
+    <script>
+        function displayDate(){
+        var recognition = new webkitSpeechRecognition();
+
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = "cmn-Hant-TW";
+
+        recognition.onstart = function() {
+            console.log('開始辨識...');
+        };
+        recognition.onend = function() {
+            console.log('停止辨識!');
+        };
+        recognition.onresult = function(event) {
+
+            var i = event.resultIndex;
+            var j = event.results[i].length - 1;
+            show.innerHTML = event.results[i][j].transcript;
+            console.log(event.results[i][j].transcript);
+            if (event.results[i][j].transcript == '播放' || event.results[i][j].transcript == '影片播放' || event.results[i][j].transcript == '繼續') {
+                parent.document.getElementById('MovieShow2').play();
+                parent.document.getElementById('MovieShow2').playbackRate = 1.0;
+            }
+            if (event.results[i][j].transcript == '快轉') {
+                parent.document.getElementById('MovieShow2').playbackRate = 2.0;
+
+            }
+            if (event.results[i][j].transcript == '靜音') {
+                parent.document.getElementById('MovieShow2').volume = false;
+
+            }
+            if (event.results[i][j].transcript == '開啟聲音') {
+                parent.document.getElementById('MovieShow2').volume = true;
+
+            }
+            if (event.results[i][j].transcript == '倒退') {
+                parent.document.getElementById('MovieShow2').defaultPlaybackRate = -3;
+
+            }
+            if (event.results[i][j].transcript == '暫停' || event.results[i][j].transcript == '停止' ||event.results[i][j].transcript == '結束') {
+                parent.document.getElementById('MovieShow2').pause();
+            }
+        }
+
+        recognition.start();
+        }
+        function display(){
+        var recognition = new webkitSpeechRecognition();
+
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = "cmn-Hant-TW";
+
+        recognition.onstart = function() {
+            console.log('開始辨識...');
+        };
+        recognition.onend = function() {
+            console.log('停止辨識!');
+        };
+        recognition.onresult = function(event) {
+
+            var i = event.resultIndex;
+            var j = event.results[i].length - 1;
+            show3.innerHTML = event.results[i][j].transcript;
+            console.log(event.results[i][j].transcript);
+            if (event.results[i][j].transcript == '播放' || event.results[i][j].transcript == '影片播放' || event.results[i][j].transcript == '繼續') {
+                parent.document.getElementById('MovieShow3').play();
+                parent.document.getElementById('MovieShow3').playbackRate = 1.0;
+            }
+            if (event.results[i][j].transcript == '快轉') {
+                parent.document.getElementById('MovieShow3').playbackRate = 2.0;
+
+            }
+            if (event.results[i][j].transcript == '靜音') {
+                parent.document.getElementById('MovieShow3').volume = false;
+
+            }
+            if (event.results[i][j].transcript == '開啟聲音') {
+                parent.document.getElementById('MovieShow3').volume = true;
+
+            }
+            if (event.results[i][j].transcript == '倒退') {
+                parent.document.getElementById('MovieShow3').playbackRate = 1.0;
+
+            }
+            if (event.results[i][j].transcript == '暫停' || event.results[i][j].transcript == '停止' ||event.results[i][j].transcript == '結束') {
+                parent.document.getElementById('MovieShow3').pause();
+            }
+        }
+
+        recognition.start();
+        }
+    </script>
+
+
 
     <footer class="text-muted">
         <div class="container">
