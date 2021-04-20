@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Mountains+of+Christmas:700);
+@font-face {
+    font-family: Gentium;
+    src: url(Silver.ttf);
+  }
+h1 { font-family: Gentium, serif; }
+body { 
+background-image:url(Moon.png) ;
+  background-size:100%; 
+  height:100%;
+  background-repeat: no-repeat;
+  overflow:hidden;
+  margin:0;
+  width:100%;
+}
+.ex4-box{
+    cursor:url(https://i.imgur.com/I72Q3dG.png);
+}
+a{
+    cursor:url(img/sheep.png);
+}
+.ex4-box{
+    width: 450px;
+    height: 450px;
+    max-width:  100%;
+    display:  block;
+     position:  relative
+    }
+    .ex4-img{
+    top: calc(50% - -45px);
+    left: calc(50% - -225px);
+    position: absolute;
+    }
+    .ex4-img-02{
+        top: calc(50% - -45px);
+        left: calc(50% - -875px);
+        position: absolute;
+        }
+.home{
+    position:fixed;
+    top: 850px;
+    left: 1800px;
+}   
+.p10{
+    position: absolute;
+    top : 22%;
+    left : 24%;
+}   
+.p11{
+    position: absolute;
+    top : 102%;
+    left : 12%;
+}   
+.christmas-blue {
+color: #035ee2;
+	background: -webkit-linear-gradient(transparent, transparent), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/blue_glitter.gif) repeat;
+	background: -o-linear-gradient(transparent, transparent) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	margin: 0;
+	padding: 0;
+
+	font-weight: 900;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	z-index: 999999;
+	-webkit-background-clip: text;
+}
+
+.christmas-gold {
+	color: #D81E1E;
+  
+color: gold;
+	background: -webkit-linear-gradient(transparent, transparent), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/gold_glitter.gif) repeat;
+	background: -o-linear-gradient(transparent, transparent) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	margin: 0;
+	padding: 0;
+
+	font-weight: 900;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	z-index: 999999;
+	-webkit-background-clip: text;
+}
+
+
+
+h1 {position:absolute;font-size: 8.5vw;
+  width:100%;
+  height:100%;
+  text-align:center;
+  max-height:100px;
+  z-index:-1;
+line-height:0;
+  margin-top:150px;
+  color:#fff;
+	font-family: Gentium, cursive;
+}
+
+
